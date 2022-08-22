@@ -1,0 +1,604 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<meta name="theme-color" content="#712cf9">
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <header class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Admin Panel</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+       
+          <li class="nav-item">
+            <a class="nav-link active" id="v-pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="true">
+                <span data-feather="home"></span>
+                Dashboard
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="add_user.html">
+                <span data-feather="user" class="align-text-bottom"></span>
+              Users
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_user.html">
+                <span data-feather="plus" class="align-text-bottom"></span>
+              Add User
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_company.html">
+                <span data-feather="plus" class="align-text-bottom"></span>
+              Add Comapny
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_department.html">
+                <span data-feather="plus" class="align-text-bottom"></span>
+              Add Department
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_organization.html">
+                <span data-feather="plus" class="align-text-bottom"></span>
+              Add Organization
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add_project.html">
+                <span data-feather="plus" class="align-text-bottom"></span>
+              Add Project
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assign_roles.html">
+                <span data-feather="plus" class="align-text-bottom"></span>
+              Assign Roles
+            </a>
+          </li>
+
+        </ul>
+
+       
+       
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <div class="tab-content" id="v-pills-tabContent" style="width: 100%">
+            <!-- dasboard  -->
+            <div class="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
+            <h1>Dashboard</h1>
+      
+      
+              <div class="card bg-success text-white">
+                <div class="card-body">
+                  <div class="card-title">News List</div>
+                  <p>Latest News added</p>
+                </div>
+              </div>
+              <table class="table table-hover table-bordered table_shadow mt-3">
+                <thead>
+                  <tr class="text-success" style="width: 96%; margin-left: auto; margin-right: auto;">
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Published</th>
+                    <th>Views</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>3</td>
+                    <td>Teslas Elon Musk faces investor Lawsuit</td>
+                    <td>2010-06-12 18:28:43</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Teslas Elon Musk faces investor Lawsuit</td>
+                    <td>2010-06-12 18:28:43</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Teslas Elon Musk faces investor Lawsuit</td>
+                    <td>2010-06-12 18:28:43</td>
+                    <td>22</td>
+                  </tr>
+                </tbody>
+                </table>
+            </div>
+
+              <!-- users  -->
+      <div class="tab-pane fade" id="v-pills-users" role="tabpanel" aria-labelledby="v-pills-users-tab">
+        <h1>Users</h1>
+        <button type="button" class="btn btn-success btn-lg"><span data-feather="plus" ></span>Add Users</button>
+
+        <div class="card bg-success text-white mt-2">
+          <div class="card-body">
+            <div class="card-title">Users List</div>
+          </div>
+        </div>
+        <table class="table table-hover table-bordered table_shadow mt-3">
+          <thead>
+            <tr class="text-success" style="width: 96%; margin-left: auto; margin-right: auto;">
+              <th>ID</th>
+              <th>Email</th>
+              <th>Created</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Level</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>john@gmail.com</td>
+              <td>2010-06-12 18:28:43</td>
+              <td>John</td>
+              <td>Jack</td>
+              <td>User</td>
+              <td class="text-center">
+               <span data-feather="edit-2" class="align-text-bottom"></span>
+               <span data-feather="x" class="align-text-bottom text-danger"></span>
+             </td>
+            </tr>
+            <tr>
+             <td>2</td>
+             <td>john@gmail.com</td>
+             <td>2010-06-12 18:28:43</td>
+             <td>John</td>
+             <td>Jack</td>
+             <td>User</td>
+             <td class="text-center">
+              <span data-feather="edit-2" class="align-text-bottom"></span>
+              <span data-feather="x" class="align-text-bottom text-danger"></span>
+            </td>
+           </tr>
+           <tr>
+             <td>3</td>
+             <td>john@gmail.com</td>
+             <td>2010-06-12 18:28:43</td>
+             <td>John</td>
+             <td>Jack</td>
+             <td>User</td>
+             <td class="text-center">
+              <span data-feather="edit-2" class="align-text-bottom"></span>
+              <span data-feather="x" class="align-text-bottom text-danger"></span>
+            </td>
+           </tr>
+           <tr>
+             <td>4</td>
+             <td>john@gmail.com</td>
+             <td>2010-06-12 18:28:43</td>
+             <td>John</td>
+             <td>Jack</td>
+             <td>User</td>
+             <td class="text-center">
+              <span data-feather="edit-2" class="align-text-bottom"></span>
+              <span data-feather="x" class="align-text-bottom text-danger"></span>
+            </td>
+           </tr>
+           <tr>
+             <td>5</td>
+             <td>john@gmail.com</td>
+             <td>2010-06-12 18:28:43</td>
+             <td>John</td>
+             <td>Jack</td>
+             <td>User</td>
+             <td class="text-center">
+              <span data-feather="edit-2" class="align-text-bottom"></span>
+              <span data-feather="x" class="align-text-bottom text-danger"></span>
+            </td>
+           </tr>
+           <tr>
+             <td>6</td>
+             <td>john@gmail.com</td>
+             <td>2010-06-12 18:28:43</td>
+             <td>John</td>
+             <td>Jack</td>
+             <td>User</td>
+             <td class="text-center">
+              <span data-feather="edit-2" class="align-text-bottom"></span>
+              <span data-feather="x" class="align-text-bottom text-danger"></span>
+            </td>
+           </tr>
+           <tr>
+             <td>7</td>
+             <td>john@gmail.com</td>
+             <td>2010-06-12 18:28:43</td>
+             <td>John</td>
+             <td>Jack</td>
+             <td>User</td>
+             <td class="text-center">
+              <span data-feather="edit-2" class="align-text-bottom"></span>
+              <span data-feather="x" class="align-text-bottom text-danger"></span>
+            </td>
+           </tr>
+           <tr>
+             <td>8</td>
+             <td>john@gmail.com</td>
+             <td>2010-06-12 18:28:43</td>
+             <td>John</td>
+             <td>Jack</td>
+             <td>User</td>
+             <td class="text-center">
+              <span data-feather="edit-2" class="align-text-bottom"></span>
+              <span data-feather="x" class="align-text-bottom text-danger"></span>
+            </td>
+           </tr>
+           <tr>
+            <td>9</td>
+            <td>john@gmail.com</td>
+            <td>2010-06-12 18:28:43</td>
+            <td>John</td>
+            <td>Jack</td>
+            <td>User</td>
+            <td class="text-center">
+             <span data-feather="edit-2" class="align-text-bottom"></span>
+             <span data-feather="x" class="align-text-bottom text-danger"></span>
+           </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>john@gmail.com</td>
+            <td>2010-06-12 18:28:43</td>
+            <td>John</td>
+            <td>Jack</td>
+            <td>User</td>
+            <td class="text-center">
+             <span data-feather="edit-2" class="align-text-bottom"></span>
+             <span data-feather="x" class="align-text-bottom text-danger"></span>
+           </td>
+          </tr>
+           
+          </tbody>
+          </table>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+           <!-- add user  -->
+           <div class="tab-pane fade" id="v-pills-add-user" role="tabpanel" aria-labelledby="v-pills-add-user-tab">
+            <div class="card bg-success text-white mt-2">
+              <div class="card-body">
+                <div class="card-title">Add User</div>
+              </div>
+            </div>
+                   <!-- form     -->
+                   <form class="row g-3 mt-3 table_shadow">
+                    <div class="col-12">
+                      <label for="username" class="form-label">Username</label>
+                      <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="col-12">
+                      <label for="firstname" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                    </div>
+                    <div class="col-12">
+                      <label for="lastname" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                    </div>
+                    <div class="col-12">
+                      <label for="role" class="form-label">Role</label>
+                      <input type="text" class="form-control" id="role" placeholder="Role">
+                    </div>
+                    <div class="col-12">
+                      <label for="teamcode" class="form-label">Team Code</label>
+                      <input type="text" class="form-control" id="teamcode" placeholder="Team Code">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="phonecode" class="form-label">Phone Code</label>
+                      <input type="text" class="form-control" id="phonecode">
+                    </div>
+                    <div class="col-12">
+                      <label for="iamge" class="form-label">Insert Image</label>
+                      <input type="file" class="form-control" id="image">
+                    </div>
+                    
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                  </form>
+           </div>
+          <!-- add user end  -->
+           <!-- Company  -->
+           
+           <div class="tab-pane fade" id="v-pills-categories" role="tabpanel" aria-labelledby="v-pills-categories-tab">
+             <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="card bg-success text-white mt-5">
+                    <div class="card-body">
+                      <div class="card-title">Company</div>
+                    </div>
+                  </div>
+                  <form class="table_shadow p-3">
+                    <div class="form-group mt-3">
+                        <label for="addCompany" class="form-label">Company Name</label>
+                      <input type="text" class="form-control" id="addCompany" aria-describedby="company" placeholder="Company">
+                    </div>
+                    <button type="submit" class="btn btn-success ms-auto mt-2">Add</button>
+                  </form>
+                </div>
+                <div class="col">
+                </div>
+              </div>
+              </div>
+           </div>
+     <!-- end of Company  -->
+     <!-- add department  -->
+     <div class="tab-pane fade show" id="v-pills-add_department" role="tabpanel" aria-labelledby="v-pills-add_department-tab">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card bg-success text-white mt-5">
+                  <div class="card-body">
+                    <div class="card-title">Department</div>
+                  </div>
+                </div>
+                <form class="table_shadow p-3">
+                    <div class="col-12">
+                        <label for="department_name" class="form-label">Department Name</label>
+                        <input type="text" class="form-control" id="department_name" placeholder="Department Name">
+                      </div>
+                      <div class="col-12 mt-3">
+                        <label for="departName" class="form-label">Organization Name</label>
+                       <select name="departname" id="departName" class="form-control" >
+                            <option value="fiver">Fiver</option>
+                        
+                            <option value="upwork">Upwork</option>
+                        
+                            <option value="freelancer">Freelancer</option>
+                        
+                            <option value="discord">Discord</option>
+                        
+                            <option value="zoom">Zoom</option>
+                        
+                            <option value="Dowell">Dowell</option>
+                        
+                        </select>
+                      </div>
+                  <button type="submit" class="btn btn-success ms-auto mt-2">Add</button>
+                </form>
+              </div>
+              <div class="col">
+              </div>
+            </div>
+            </div>
+
+            
+  </div>
+     <!-- end of department  -->
+
+     <!-- add organization  -->
+     <div class="tab-pane fade show" id="v-pills-add_organization" role="tabpanel" aria-labelledby="v-pills-add_organization-tab">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card bg-success text-white mt-5">
+                  <div class="card-body">
+                    <div class="card-title">Organisation</div>
+                  </div>
+                </div>
+                <form class="table_shadow p-3">
+                    <div class="col-12">
+                        <label for="org_name" class="form-label">Organisation Name</label>
+                        <input type="text" class="form-control" id="org_name" placeholder="Organisation Name">
+                      </div>
+                      <div class="col-12 mt-3">
+                        <label for="comapnyName" class="form-label">Company Name</label>
+                       <select name="comapnyname" id="comapnyName" class="form-control" >
+                            <option value="fiver">Fiver</option>
+                        
+                            <option value="upwork">Upwork</option>
+                        
+                            <option value="freelancer">Freelancer</option>
+                        
+                            <option value="discord">Discord</option>
+                        
+                            <option value="zoom">Zoom</option>
+                        
+                            <option value="Dowell">Dowell</option>
+                        
+                        </select>
+                      </div>
+                  <button type="submit" class="btn btn-success ms-auto mt-2">Add</button>
+                </form>
+              </div>
+              <div class="col">
+              </div>
+            </div>
+            </div>
+
+            
+  </div>
+     <!-- end of organisation  -->
+
+     <!-- add project  -->
+     <div class="tab-pane fade show" id="v-pills-add_project" role="tabpanel" aria-labelledby="v-pills-add_project-tab">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card bg-success text-white mt-5">
+                  <div class="card-body">
+                    <div class="card-title">Project</div>
+                  </div>
+                </div>
+                <form class="table_shadow p-3">
+                    <div class="col-12">
+                        <label for="project_name" class="form-label">Project Name</label>
+                        <input type="text" class="form-control" id="project_name" placeholder="Project Name">
+                      </div>
+                      <div class="col-12 mt-3">
+                        <label for="orgName" class="form-label">Organisation Name</label>
+                       <select name="orgname" id="orgName" class="form-control" >
+                            <option value="fiver">Fiver</option>
+                        
+                            <option value="upwork">Upwork</option>
+                        
+                            <option value="freelancer">Freelancer</option>
+                        
+                            <option value="discord">Discord</option>
+                        
+                            <option value="zoom">Zoom</option>
+                        
+                            <option value="Dowell">Dowell</option>
+                        
+                        </select>
+                      </div>
+                  <button type="submit" class="btn btn-success ms-auto mt-2">Add</button>
+                </form>
+              </div>
+              <div class="col">
+              </div>
+            </div>
+            </div>
+
+            
+  </div>
+     <!-- end of project  -->
+
+     <!-- assign roles  -->
+     <div class="tab-pane fade show" id="v-pills-assign-roles" role="tabpanel" aria-labelledby="v-pills-assign-roles-tab">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-success text-white mt-5">
+              <div class="card-body">
+                <div class="card-title">Assign Roles</div>
+              </div>
+            </div>
+            <form class="table_shadow p-3">
+              
+                  <div class="col-12 mt-3">
+                    <label for="user_" class="form-label">User</label>
+                   <select name="users" id="user_" class="form-control" >
+                        <option value="fiver">Jack</option>
+                        <option value="upwork">Kim</option>
+                        <option value="freelancer">Mary</option>
+                        <option value="discord">Larry</option>
+                        <option value="zoom">Byce</option>
+                        <option value="Dowell">BlueRay</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12 mt-3">
+                    <label for="roles_" class="form-label">Roles</label>
+                   <select name="roles" id="roles_" class="form-control" >
+                       
+                    </select>
+                  </div>
+
+                  <div class="col-12 mt-3">
+                    <label for="category" class="form-label">Category</label>
+                   <select name="category" id="category" class="form-control" >
+                        <option>Select value</option>
+                    </select>
+                  </div>
+              <button type="submit" class="btn btn-success ms-auto mt-2">Add</button>
+            </form>
+            <script>
+              var category_array = {
+                "company_lead": ["Jack", "Bruzz", "Merry", "Hira", "fara"],
+                "organization_lead" :["Preston", "Blue-Ray", "Horday", "Kim", "Sam"],
+                "department_lead":["Nugh", "Nag", "Bristo", "Jack Ma", "Grill"],
+                "project_lead":["Flerdo", "Zenta", "Sigma", "Green-Ray", "Yellow-Jack"],
+                "team_member":["Fin", "Stem","brencj","damm"]
+              }
+              window.onload = function() {
+                var roles = document.getElementById("roles_");
+                var category = document.getElementById("category");
+                for (var x in category_array) {
+                  roles.options[roles.options.length] = new Option(x, x);
+                }
+                roles.onchange = function() {
+                  //empty Chapters- and Topics- dropdowns
+                  category.length = 1;
+                  //display correct values   
+                  for (var y in category_array) {
+                    var a = category_array[this.value];
+                    for(var m=0; m<=a.length; m++){
+                      category.options[category.options.length] = new Option(a[m],a[m]);         
+                    }
+                    break;
+                  }
+                }
+              }
+              
+              </script>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+        </div>  
+    </div>
+     <!-- end assign roles  -->
+        </div>            
+        
+      </div>
+
+    
+    </main>
+  </div>
+</div>
+<script>
+  feather.replace()
+  </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    </body>
+</html>
